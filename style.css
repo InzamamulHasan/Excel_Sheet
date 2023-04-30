@@ -1,0 +1,151 @@
+body{
+    margin: 0px;
+    background-color: rgb(185, 185, 185);
+    
+}
+table{
+    border-collapse: collapse;
+ 
+}
+td,th{
+    border: 1px solid black;
+    width: 200px;
+    background-color: white;
+}
+td:focus{
+    outline: none;
+}
+ul{
+    list-style: none;
+    margin-left: -10px;
+    margin-top: -5px;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    background-color: rgb(185, 185, 185);
+    height: 50px;
+    font-family:"Inter", sans-serif;
+    align-items: end;
+    padding-bottom: 10px;
+
+}
+.home{
+    font-weight: bolder;
+    border-bottom: 2px solid green;
+    font-size: 20px;
+}
+li:hover{
+    font-weight: bolder;
+    border-bottom: 2px solid green;
+    font-size: 20px;
+    cursor: pointer;
+}
+.controls{
+    background-color: rgb(224, 218, 218);
+    margin-top: -15px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.controls>div{
+    background-color: rgb(251, 251, 251);
+    border-radius: 5px;
+
+}
+.lat{
+    height: 20px;
+}
+.text_style{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 23%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2px;
+    text-align: center;
+}
+button{
+ border: none;
+ background-color: transparent;
+
+}
+#color,#bg_color{
+    display: none;
+}
+#current_cell{
+    margin-right: 10px;
+    padding: 20px;
+    width: 50px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.lat{
+    font-size: 20px;
+}
+select:focus{
+    outline: none;
+    
+   
+}
+label:hover{
+    cursor: pointer;
+}
+select{
+    background-color: rgb(212, 212, 212);
+    border-radius: 5px;
+}
+select:hover{
+    cursor: pointer;
+}
+.text_align{
+   
+    text-align: center;
+    padding-top: 20px;
+
+}
+.copy{
+    display: flex;
+    width: 20%;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+.sheet{
+   
+    padding:20px 20px 20px 20px;
+}
+.sheet>button{
+    outline: none;
+    background-color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+h1,h3:hover{
+    cursor: pointer;
+}
+@media (max-width:700px){
+    .controls{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .controls>div{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 10px;
+    }
+
+}
